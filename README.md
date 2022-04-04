@@ -32,7 +32,7 @@ python3 -m pip install --index-url https://test.pypi.org/simple/ --extra-index-u
 The testpypi version usually has the most recent updates, including experimental methods qnd bug fixes
 
 #### From Research to Production
-WeightWatcher is based on theoretical research (done injoint with UC Berkeley) into Why Deep Learning Works, based on our Theory of Heavy Tailed Self-Regularization (HT-SR).  It uses ideas from Random Matrix Theory (RMT), Statistical Mechanics, and Strongly Correlated Systems.
+WeightWatcher is based on theoretical research (done jointly with UC Berkeley) into Why Deep Learning Works, based on our Theory of Heavy Tailed Self-Regularization (HT-SR).  It uses ideas from Random Matrix Theory (RMT), Statistical Mechanics, and Strongly Correlated Systems.
 
 More details and demos can be found on the [Calculated Content Blog](https://calculatedcontent.com/)
 
@@ -198,7 +198,7 @@ Weightwatcher can detect the signatures of overtraining in specific layers of a 
 
 #### Early stopping
 
-The weightwatcher **alpha** metric can be used to detect when to apply early stopping.  When the average **alpha** (summary statistic) drops below 2.0, this indicates that the model may be overtrained and early stopping is necesary.
+The weightwatcher **alpha** metric can be used to detect when to apply early stopping.  When the average **alpha** (summary statistic) drops below 2.0, this indicates that the model may be overtrained and early stopping is necessary.
 
 Below is an example of this, showing training loss and test lost curves for  a small Transformer model, trained from scratch, along with the average **alpha** summary statistic.
 
@@ -395,7 +395,7 @@ ww.layer#.esd4.png
 On using weightwatcher for the first time.  I recommend selecting at least 1 trained  model, and running weightwatcher with all analyze options on, including the plots,  to see
 - if the layers ESDs are well formed and heavy tailed
 - if any layers are nearly random, indicating they are not well trained
-- if all the power law a fits look reasonable, and xmin is small enough that the fit captures a good part of the tail of the ESD
+- if all the power law fits look reasonable, and xmin is small enough that the fit captures a a good part of the tail of the ESD
 
 Moreover, the Power Laws fits, and the alpha fit, only work well when the ESDs are both heavy tailed, *and*( can be easily fit to a single power law.
 But sometimes the power law / alpha fits don't work.  This happens when
