@@ -215,7 +215,7 @@ This is good way to visualize the correlations in the true ESD.
 details = watcher.analyze(randomize=True, plot=True)
 ```
 
-Fig (a) is well trained; Fig (b) may be over-trained. That orange spike on the far right is the tell-tale clue; it's caled a **Correlation Trap**.  
+Fig (a) is well trained; Fig (b) may be over-trained. That orange spike on the far right is the tell-tale clue; it's called a **Correlation Trap**.  
 
 A **Correlation Trap** is characterized by  Fig (b); here the 
 actual (green) and random (red) ESDs look almost identical, except for a small shelf of correlation (just right of 0).
